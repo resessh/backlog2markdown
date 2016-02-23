@@ -1,6 +1,9 @@
 #! /usr/bin/env ruby
 # coding: utf-8
 
+# These codes are licensed under CC0.
+# http://creativecommons.org/publicdomain/zero/1.0/deed.ja
+
 require 'open-uri'
 require 'mechanize'
 require 'pandoc-ruby'
