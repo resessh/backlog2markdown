@@ -89,7 +89,9 @@ if __FILE__ == $0
     old_i = OldBL.new(OLD_USER_ID, OLD_PASS, OLD_DOMAIN, OLD_PROJECT)
     old_i.login
     new_i = NewBL.new(NEW_USER_ID, NEW_PASS, NEW_DOMAIN, NEW_PROJECT)
-    new_i.login(true, NEW_BASIC_ID, NEW_BASIC_PASS)
+    new_i.login
+    # オンプレでBASIC認証がある際は下記を利用
+    # new_i.login(true, NEW_BASIC_ID, NEW_BASIC_PASS)
 
     links = old_i.get_wiki_url_list
 
